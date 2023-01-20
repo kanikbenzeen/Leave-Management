@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/common.js"></script>
+
+    <div class="centera">
+        <button class="title">Leave Management</button>
+        <div class="header">
+            <p class="user">Kanik Kapoor</p>
+            <img src="../imges/pngegg.png" class="img">
+        </div>
+    </div>
+    <div>
+
+            <p class="title">Total Leaves - {{total_leaves}}</p>
+            <div class="center">
+                <p class="title">Sick Leaves</p>
+                <button class="buttonm" onclick="decreasesick()">-</button>
+                <input type="number" class="text" id="sick" value="0" />
+                <button class="buttonp" onclick="increasesick()">+</button>
+            </div>
+            <div class="center">
+                <p class="title">Casual Leaves</p>
+                <button class="buttonm" onclick="decreasecasual()">-</button>
+                <input type="number"  class="text" id="casual" value="0" />
+                <button class="buttonp" onclick="increasecasual()">+</button>
+            </div>
+            <div class="center">
+                <p class="title">Paid Leaves</p>
+                <button class="buttonm" onclick="decreasepaid()">-</button>
+                <input type="number"  class="text" id="paid" value="0" />
+                <button class="buttonp" onclick="increasepaid()">+</button>
+            </div>
+        {{!-- <form> --}}
+            <div class="centerb">
+                <button type="submit" value="Submit" class="submit" id="submit" onclick="submit()">Submit</button>
+            </div>
+        {{!-- </form> --}}
+    </div>
